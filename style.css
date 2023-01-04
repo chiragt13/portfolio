@@ -168,6 +168,10 @@ img {
     justify-content: center;
 }
 
+.email {
+    text-decoration: underline;
+}
+
 .footer-container {
     background: #181818;
     width: 100%;
