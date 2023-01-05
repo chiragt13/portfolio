@@ -13,7 +13,7 @@
 }
 
 ::selection {
-    background: #bbddff;
+    background: #52a9ff;
 }
 
 ::-webkit-scrollbar {
@@ -210,6 +210,73 @@ img {
 
 .card-content {
     padding: 20px;
+}
+
+.current:after {
+    border-bottom: 1px solid #d0d5da;
+    animation-name: current-in;
+    animation-duration: 0.5s;
+    content: '';
+    display: block;
+}
+
+/* Resume */
+.resume-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.resume-left h1, .resume-right h1 {
+    color: #F4F6F8;
+    font-size: 14px;
+
+}
+
+.resume-left h2, .resume-right h2 {
+    font-size: 20px;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+}
+
+.resume-left h3, .resume-right h3 {
+    color: #52a9ff;
+    font-size: 14px
+}
+
+.resume-left ul, .resume-right ul {
+    padding: 10px 30px;
+    list-style-type: circle;
+    font-size: 14px;
+}
+
+.resume-left p, .resume-right p {
+    font-size: 14px
+}
+
+.resume-left {
+    flex: 60%;
+    max-width: 40%;
+    margin-right: 40px;
+}
+
+.resume-right {
+    flex: 40%;
+    max-width: 30%;
+    margin-left: 40px;
+}
+
+.download-button {
+    float: right;
+    margin:30px;
+    padding:10px;
+    background-color: #52a9ff;
+    transition: 0.25s ease-in-out;
+}
+
+.download-button:hover {
+    background-color: #F4F6F8;
 }
 
 .current:after {
